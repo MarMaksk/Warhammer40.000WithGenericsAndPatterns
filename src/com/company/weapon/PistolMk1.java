@@ -10,6 +10,11 @@ public class PistolMk1 implements RangeWeapon {
         return this;
     }
 
+    @Override
+    public int getDamage() {
+        return damage;
+    }
+
 
     @Override
     public void showWeaponSpecificaton() {
