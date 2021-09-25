@@ -34,7 +34,7 @@ public abstract class Hero<T extends Weapon> {
     }
 
     public void setWeapon(T weapon) {
-
+        this.weapon = weapon;
     }
 
     public abstract int getHealth();

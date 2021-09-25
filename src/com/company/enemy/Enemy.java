@@ -17,6 +17,10 @@ public abstract class Enemy<T extends Weapon> {
 
     public abstract int getHealth();
 
+    public void setWeapon(T weapon) {
+        this.weapon = weapon;
+    }
+
     public int getDamage() {
         return weapon.getDamage();
     }
