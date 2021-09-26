@@ -2,7 +2,7 @@ package com.company.heroes;
 
 import com.company.enemy.Enemy;
 import com.company.weapon.RangeWeapon;
-import com.company.weapon.Weapon;
+
 
 public class Sniper<T extends RangeWeapon> extends Hero<T> {
 
