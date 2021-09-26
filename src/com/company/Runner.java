@@ -6,8 +6,7 @@ import com.company.heroes.Hero;
 import com.company.heroes.Sniper;
 import com.company.weapon.*;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Runner {
     public static void main(String[] args) {
@@ -24,5 +23,18 @@ public class Runner {
         map.put(1, new PistolMk1());
         map.put(2, new ElectricSword());
         map.put(3, new Staff());
+
+        System.out.println(map);
+        map.values().stream().sorted(new SotrtByDamage()).forEach(System.out::println);
+        List<Weapon> list = Arrays.asList(new Staff(), new ElectricSword(), new PistolMk1());
+        System.out.println(list);
+        list.sort(new SotrtByDamage());
+        System.out.println(list);
+    }
+}
+class SotrtByDamage implements Comparator<Weapon>{
+    @Override
+    public int compare(Weapon o1, Weapon o2) {
+        return Integer.compare(o1.getDamage(), o2.getDamage());
     }
 }

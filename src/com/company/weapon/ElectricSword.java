@@ -4,10 +4,6 @@ public class ElectricSword implements MeleeWeapon {
 
     private int damage = 45;
 
-    @Override
-    public Weapon getWeapon() {
-        return this;
-    }
 
     @Override
     public int getDamage() {

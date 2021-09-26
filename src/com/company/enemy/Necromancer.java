@@ -1,7 +1,7 @@
 package com.company.enemy;
 
 import com.company.heroes.Hero;
-import com.company.weapon.MagicWeapon;
+import com.company.weapon.*;
 
 public class Necromancer<T extends MagicWeapon> extends Enemy<T> {
     private int health = 50;

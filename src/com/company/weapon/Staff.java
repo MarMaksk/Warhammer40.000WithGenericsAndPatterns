@@ -4,10 +4,6 @@ public class Staff implements MagicWeapon {
 
     private int damage = 30;
 
-    @Override
-    public Weapon getWeapon() {
-        return this;
-    }
 
     @Override
     public int getDamage() {

@@ -1,7 +1,9 @@
 package com.company.weapon;
 
 public interface Weapon {
-    Weapon getWeapon();
+    default Weapon getWeapon() {
+        return this;
+    }
 
     int getDamage();
 
